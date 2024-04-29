@@ -37,5 +37,10 @@ public class UrlController {
         }
     }
 
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value = "names", defaultValue = "World") String name) {
+        return String.format("Hello %s!", name);
+    }
+
 
 }

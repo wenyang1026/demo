@@ -1,0 +1,11 @@
+runtime: java17
+env: standard
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: "./rice-comp-539-spring-2022-fcffacde4281.json"
+instance_class: F1
+service_account: team3-762@rice-comp-539-spring-2022.iam.gserviceaccount.com
+service: team3backend
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+    secure: always # Redirect HTTP to HTTPS
